@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.feedback-container{
+    font-family: "Inter", sans-serif;
+}
+.feedback-text .feedback-header {
+    font-size: 80px;
+    font-weight: 900;
+    color: #6A5870;
+    text-align: center;
+}
+
+.feedback-text p{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgba(106, 88, 112, 0.8);
+    text-align: center;
+    padding-top: 15px;
+}
+
+.feedback-faces-pictures {
+    display: flex;
+    justify-content: center; 
+}
+  
+.emoji {
+    font-size: 3rem; 
+    margin: 0 10px; 
+    cursor: pointer; 
+}
+  
+.emoji.selected {
+    border: 2px solid #6A5870; 
+}
+
+.feedback-category {
+    text-align: center; /* Center the buttons */
+}
+  
+.feedback-category button {
+    font-size: 1rem; 
+    padding: 10px 20px; 
+    background-color: #51445B; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    margin: 10px; 
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+}
+  
+.feedback-category button:hover {
+    opacity: 0.8; 
+}
+  
+.feedback-category button.selected {
+    border: 2px solid #6A5870; 
+}
+
+.feedback-submit-button{
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-submit-button button {
+    font-size: 1rem; 
+    padding: 10px 20px; 
+    background-color:rgba(99, 114, 73, 0.75);
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    margin: 10px; 
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+}
+  
+
+.feedback-body{
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-message {
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #6A5870;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #e8ccbcbc;
+}

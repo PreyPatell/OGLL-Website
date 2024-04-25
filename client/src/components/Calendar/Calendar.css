@@ -1,0 +1,131 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Calendar container styles */
+.calendar-container {
+    border: 2px solid skyblue;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Calendar table styles */
+.calendar {
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Calendar header styles */
+.calendar-header {
+    border-bottom: 2px solid skyblue;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+/* Month and Year label styles */
+.label-month,
+.label-year {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Navigation button styles */
+.nav-month {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Previous and Next month button styles */
+.prev,
+.next {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Year editor input styles */
+.editor-year {
+    max-width: 3.6em;
+    font-size: 1em;
+}
+
+/* Weekday styles */
+.week-day {
+    text-align: center;
+    height: 40px;
+    font-size: 1em;
+}
+
+/* Day styles */
+.day {
+    text-align: center;
+    height: 40px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 30px;
+    line-height: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Current day styles */
+.current-day {
+    background-color: #4285f4;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Selected day styles */
+.selected-day {
+    background-color: yellow;
+    color: black;
+    border-radius: 50%;
+}
+
+/* Month popup styles */
+.month-popup {
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 2px solid skyblue;
+    z-index: 2;
+}
+
+.month-popup div {
+    padding: 0.3em;
+}
+
+/* Year label styles */
+.label-year {
+    font-size: 1.2em;
+}
+
+/* Year editor styles */
+.editor-year {
+    max-width: 3.6em;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    padding: 0.2em;
+}
+
+/* Animation styles for month and year popup */
+.month-popup,
+.editor-year {
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hide month and year popup when not needed */
+.month-popup.hidden,
+.editor-year.hidden {
+    opacity: 0;
+    visibility: hidden;
+}

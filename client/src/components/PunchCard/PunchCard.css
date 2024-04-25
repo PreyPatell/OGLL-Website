@@ -1,0 +1,54 @@
+.punch-card-container {
+    background-color: #F4EDDD;
+    font-family: "Inter", sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.punch-card-header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(106, 88, 112, .7);
+    margin-bottom: 20px;
+}
+
+.clock-status {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #6A5870;
+    margin-bottom: 20px;
+}
+
+.clock-button {
+    width: 100px;
+    background-color: #54AC52;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.clock-button:hover {
+    background-color: #3D7F3A;
+}
+
+.clock-button:disabled {
+    background-color: #CCCCCC;
+    cursor: not-allowed;
+}
+
+.clock-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.clock-button-wrapper button {
+    margin: 0 10px;
+}

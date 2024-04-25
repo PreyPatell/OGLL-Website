@@ -1,0 +1,156 @@
+.chatHead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  color: #6A5870;
+}
+
+.chatMain {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 5vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatMain::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.chatMain::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.chatMain::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+
+
+.chatEnter{
+  width: 100% ;
+  background-color: #6A5870;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.chatInput {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: #D9D9D9;
+  color: black;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.clearButton {
+  background-color: #6A5870;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.chatEnter:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.messageList, li {
+  text-align: left;
+  list-style: none;
+}
+
+.message p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: left;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+
+.received p {
+  color: white;
+  background: #637249;
+  margin-bottom: 20px;
+  
+  
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+.time{
+  margin-left: auto ;
+  
+}
+.message p.username {
+  color: black;
+  background: none; /* Remove background color */
+  margin-bottom: 0px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  text-align: left;
+  margin-right: 10%;
+}
+
+.message p.time{
+  background: none;
+  color: black;
+}
+
+.message ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.message ul li {
+  margin: 0; /* Remove margin for list items */
+}
+
+.clearButton {
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  border-radius: 15px; /* Make it rounder */
+  background-color: #6A5870; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  font-size: 14px; /* Adjust font size as needed */
+  cursor: pointer; /* Show pointer cursor on hover */
+}

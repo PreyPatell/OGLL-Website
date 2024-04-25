@@ -1,0 +1,86 @@
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .contactText {
+    flex: 1;
+    padding: 1%;
+  }
+  
+  .contactList {
+    margin-bottom: 3%;
+    list-style-type: none;
+  }
+  
+  .subject, .Message {
+    width: 70%;
+    padding: 1%;
+    border: 2px solid #6A5870;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #e8ccbcbc;
+}
+
+.subject:focus, .Message:focus {
+    outline: none;
+    border-color: #8C7C8E;
+}
+
+.Message {
+    height: 250px;
+    resize: none;
+}
+
+.fimage{
+    max-width: 100%;
+    max-width: 100%;
+    width: 5%;
+    height: auto;
+    position: absolute;
+    right: 5%; 
+    
+}
+
+  .bold-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #6A5870;
+    font-size: 25px;
+  }
+  
+  .sub-text {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 900;
+    color: #6A5870;
+  }
+  
+  .msgbox {
+    margin-right: auto;
+    padding-top: 100px;
+    padding-right: 150px;
+  }
+
+  .submit-button {
+    display: inline-block;
+    width: 72.2%;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #6A5870;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #6A5870;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #51445B;
+    border-color: #51445B;
+}

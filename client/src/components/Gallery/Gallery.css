@@ -1,0 +1,48 @@
+.gallery {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+
+.gallery h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  color: #6A5870;
+}
+
+.galImage{
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.gallery-image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.galImage {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .gallery-image-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+

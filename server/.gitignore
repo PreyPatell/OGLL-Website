@@ -1,0 +1,5 @@
+node_modules
+google-auth.js
+myKey.json
+/config/config.json
+.env

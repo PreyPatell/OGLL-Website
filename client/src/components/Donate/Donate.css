@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.donate-container{
+    background-color: #F4EDDD;
+    font-family: "Inter", sans-serif;
+    display: flex !important;
+    max-width: 100%;
+}
+
+.donate-text{
+    min-width: 55%;
+    max-width: 55%;
+    padding: 2vh;
+}
+
+.donate-text .donate-header {
+    font-size: 80px;
+    font-weight: 900;
+    color: #6A5870;
+    text-align: center;
+}
+
+.donate-text .text {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgba(106, 88, 112, 0.7);
+    text-align: center;
+}
+
+.donate-text .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-text img{
+    opacity: 50%;
+}
+
+.donate-info{
+    min-width: 30%;
+    padding: 2vh;
+    margin: 3vh;
+    
+}

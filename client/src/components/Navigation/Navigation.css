@@ -1,0 +1,131 @@
+.navbar {
+  background-color: #E5C9BC;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0;
+  align-self: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #F7EFEB;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #8F7A87;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F7EFEB;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::before,
+.navbar a.active::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar a.active {
+  font-weight: bold;
+  color: #8F7A87;
+}
+
+
+.page-title {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.logo {
+  width: 120px;  
+  margin-right: 20px;  
+  background-color: transparent;
+  padding:10px
+}
+
+.brand-text {
+  font-size: 30px;  
+  font-weight: bolder;
+  color: #DB7859;
+}
+
+.loginsignup, .signout {
+  position: absolute;
+  top: 2% ; 
+  right: 3%; 
+}
+
+.loginsignup li, .signout li{
+  margin-right: 10px;
+}
+
+
+/* mobile */
+@media screen and (max-width: 414px) {
+.navbar {
+  padding: 10px;
+}
+
+.navbar ul {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar.active ul {
+  display: flex; /* Show the menu items when the navbar is active */
+}
+
+.navbar a {
+  font-size: 20px;
+}
+
+.page-title {
+  margin-right: 5%;
+}
+
+.logo {
+  width: 100px;
+}
+
+.brand-text {
+  font-size: 24px;
+}
+
+.loginsignup,
+.signout {
+  top: 0%;
+  right: 3%;
+  position: absolute;
+}
+
+.loginsignup li,
+.signout li {
+  margin-right: 5px;
+}
+
+}

@@ -1,0 +1,80 @@
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #6A5870;
+    margin-top: 30px;
+  }
+  
+  #paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .family-image{
+    margin-left: 100px;
+    margin-right: 50px;
+    width: auto;
+  }
+  
+  #paragraph p {
+    max-width: 100%;
+    text-align: left;
+    margin-left: 20px;
+    font-size: medium;
+    padding-left: 50px;
+    text-align: justify;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (min-width: 768px) {
+    #paragraph {
+      flex-direction: row;
+    }
+  
+    #paragraph img {
+      max-width: 50%;
+    }
+  
+    #paragraph p {
+      max-width: 70%;
+    }
+  }
+  
+
+  #partners {
+    display: flex;
+    flex-direction: column; /* Display partners in columns */
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  #partners h2{
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  
+  .partner-image {
+    width: 100px;
+    height: auto;
+  }
+  .partner-image-connect{
+    width: 150px;
+    height: auto;
+  }
+  
+  .partner-section {
+    width: 100%; /* Full width for each partner section */
+    margin-bottom: 40px;
+  }
+  
+  #partners p {
+    font-size: small;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+  }
+  

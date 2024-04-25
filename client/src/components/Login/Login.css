@@ -1,0 +1,81 @@
+.logincontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.loginTitle {
+    font-size: 300%;
+    font-weight: 900;
+    color: #6A5870;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.passwordInput,
+.emailInput,
+.usernameInput {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60vh;
+    height: 8vh; 
+    padding: 2%;
+    font-size: 1.5rem; 
+}
+
+.passwordInput::placeholder,
+.emailInput::placeholder {
+    font-size: 1.2rem; 
+}
+
+.loginBox {
+    background-color: transparent;
+    padding: 5%;
+    border-radius: 50px;
+    margin-top: 7%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid #db7859; 
+}
+
+
+.loginSubmitButton {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    height: 6vh;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: #647249; 
+    width: 60%;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    font-size: medium
+}
+
+
+
+.loginSubmitButton:hover {
+    background-color: #525d3b; /* Darker green on hover */
+}
+
+.err, .succ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
